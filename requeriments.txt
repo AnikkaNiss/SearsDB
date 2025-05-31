@@ -1,0 +1,31 @@
+# --- Requisitos del sistema para ejecutar el sistema Sears ---
+
+Python >= 3.9
+
+# --- Librerías de Python necesarias ---
+PyQt6>=6.2.0
+mysql-connector-python>=8.0
+
+# Puedes instalar estas librerías con:
+# pip install -r requisitos.txt
+
+# --- Servidor de base de datos necesario ---
+MySQL Server 8.0 (o compatible)
+Puerto: 3307 (según configuración actual en el código)
+Usuario: root
+Contraseña: root
+Base de datos: sears_db
+
+# --- Consideraciones ---
+- La base de datos debe estar creada con el script de estructura SQL provisto (tablas, triggers y vistas).
+- Debe existir al menos un cliente con ID = 1 llamado 'CLIENTE GENERAL'.
+- Los datos iniciales (departamentos, productos, proveedores, empleados) deben estar insertados antes de usar el módulo de ventas.
+- El puerto y credenciales pueden ajustarse en la clase DatabaseManager si cambian.
+
+# --- Sugerencias adicionales ---
+- Se recomienda usar un entorno virtual (venv) para gestionar dependencias.
+- Asegúrate de que el servidor de MySQL esté en ejecución antes de abrir la aplicación.
+
+# --- Línea para entorno virtual (opcional) ---
+# python -m venv venv
+# source venv/bin/activate  (Linux/macOS) o venv\Scripts\activate (Windows)
